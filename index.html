@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos de Imagem na Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="py-16">
+            <h1>Direitos de Imagem na Web</h1>
+            <h3>Guia para professores e alunos</h3>
+        </header>
+
+        <nav class="tabs" id="main-tabs">
+            <button class="tab-button active" data-tab="introducao">Introdução</button>
+            <button class="tab-button" data-tab="licencas">Tipos de Licenças</button>
+            <button class="tab-button" data-tab="encontrar">Como Encontrar Imagens</button>
+            <button class="tab-button" data-tab="usar">Como Usar Corretamente</button>
+            <button class="tab-button" data-tab="quiz">Quiz Interativo</button>
+        </nav>
+
+        <main>
+            <!-- Secção: Introdução -->
+            <section id="introducao" class="tab-content active">
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">O que são direitos autorais de imagens?</h2>
+                        <p>Os direitos autorais são direitos legais concedidos ao criador de uma obra original, incluindo imagens. Estes direitos conferem ao autor o controlo exclusivo sobre a reprodução, distribuição e apresentação da sua obra.</p>
+                        <p>Quando encontramos uma imagem na internet, ela pertence a alguém que dedicou tempo e esforço à sua criação. Usar estas imagens sem permissão ou sem respeitar as condições estabelecidas pelo autor constitui uma violação dos direitos autorais.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Por que é importante respeitar estes direitos?</h2>
+                        <ul>
+                            <li>É uma questão de <span class="tooltip" data-tooltip="Reconhecer e valorizar o trabalho dos criadores">ética profissional</span></li>
+                            <li>Respeita o trabalho criativo dos autores</li>
+                            <li>Evita problemas legais e possíveis multas</li>
+                            <li>Ensina boas práticas digitais aos alunos</li>
+                            <li>Contribui para um ecossistema digital sustentável</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Consequências legais do uso indevido</h2>
+                        <div class="info-box warning">
+                            <p><strong>Atenção:</strong> O uso indevido de imagens protegidas por direitos autorais pode resultar em:</p>
+                            <ul>
+                                <li>Pedidos de remoção de conteúdo</li>
+                                <li>Indemnizações monetárias ao detentor dos direitos</li>
+                                <li>Processos judiciais</li>
+                                <li>Danos à reputação pessoal e institucional</li>
+                            </ul>
+                        </div>
+                        <p class="mt-8">Em Portugal, a Lei n.º 16/2008 (Código do Direito de Autor e dos Direitos Conexos) protege os criadores e define as penalidades para infrações, que podem incluir multas significativas.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h2 class="mb-8">Contexto educacional</h2>
+                        <p>No contexto educativo, existem algumas exceções, mas estas são limitadas. A legislação portuguesa e europeia permite o uso de pequenos excertos ou imagens para fins de citação, crítica ou ensino, desde que:</p>
+                        <ul>
+                            <li>A fonte e o autor sejam claramente identificados</li>
+                            <li>O uso seja proporcional ao objetivo pedagógico</li>
+                            <li>Não prejudique a exploração normal da obra</li>
+                        </ul>
+                        <p class="mt-8">Mesmo no contexto educativo, o princípio básico é: <strong>em caso de dúvida, peça permissão ou use conteúdo com licenças apropriadas.</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secção: Tipos de Licenças -->
+            <section id="licencas" class="tab-content">
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Compreender as licenças</h2>
+                        <p>As licenças determinam o que podemos fazer com as imagens que encontramos online. Compreender estas licenças é essencial para usar imagens de forma legal e ética.</p>
+                        <p>Existem vários tipos de licenças, cada uma com diferentes permissões e restrições. Vamos explorar as mais comuns.</p>
+                    </div>
+                </div>
+
+                <div class="license-cards" id="license-container">
+                    <!-- As licenças serão inseridas dinamicamente pelo JavaScript -->
+                </div>
+
+                <div class="card mt-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Direitos autorais tradicionais</h2>
+                        <p>Por defeito, qualquer obra criativa (incluindo fotografias, ilustrações e gráficos) está protegida por direitos autorais a partir do momento em que é criada. Isto significa que, na ausência de uma licença explícita, deve-se assumir que todos os direitos estão reservados e o uso requer permissão.</p>
+                        <p>Os direitos autorais tradicionais concedem ao autor o controlo exclusivo sobre:</p>
+                        <ul>
+                            <li>Reprodução (fazer cópias)</li>
+                            <li>Distribuição (partilhar com outros)</li>
+                            <li>Exibição pública</li>
+                            <li>Criação de obras derivadas (modificações)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mt-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Domínio público</h2>
+                        <p>As obras em domínio público podem ser usadas livremente sem restrições de direitos autorais. Uma obra pode entrar no domínio público quando:</p>
+                        <ul>
+                            <li>Os direitos autorais expiraram (em Portugal, geralmente 70 anos após a morte do autor)</li>
+                            <li>O autor renunciou a todos os direitos (por exemplo, usando a licença CC0)</li>
+                            <li>A obra foi criada por entidades governamentais (em alguns países)</li>
+                            <li>A obra não é elegível para proteção de direitos autorais</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secção: Como Encontrar Imagens -->
+            <section id="encontrar" class="tab-content">
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Bancos de imagens gratuitas</h2>
+                        <p>Existem vários recursos online onde pode encontrar imagens gratuitas para uso educacional. Estes sites oferecem imagens com licenças claras, muitas vezes sem necessidade de atribuição:</p>
+                    </div>
+                </div>
+
+                <div class="image-banks" id="banks-container">
+                    <!-- Os bancos de imagens serão inseridos dinamicamente pelo JavaScript -->
+                </div>
+
+                <div class="card mt-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Como filtrar imagens no Google</h2>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Faça a sua pesquisa no Google Imagens</h4>
+                                    <p>Comece por pesquisar o que procura no Google Imagens.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Clique em "Ferramentas"</h4>
+                                    <p>Após realizar a pesquisa, clique no botão "Ferramentas" que aparece na parte superior dos resultados.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Selecione "Direitos de utilização"</h4>
+                                    <p>Um menu suspenso permite filtrar as imagens por diferentes tipos de licenças.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Escolha a opção mais adequada</h4>
+                                    <p>Para contexto educacional, pode selecionar "Marcadas para reutilização não comercial" ou "Marcadas para reutilização não comercial com modificação".</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Verificação de licenças</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">Como verificar a licença de uma imagem</button>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>Verifique a informação apresentada junto à imagem</li>
+                                        <li>Procure pelos termos de serviço ou licença do site</li>
+                                        <li>Contacte diretamente o autor ou administrador do site se necessário</li>
+                                        <li>Procure símbolos ou declarações de licença (como os ícones Creative Commons)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">Como fazer busca reversa de imagens</button>
+                                <div class="accordion-content">
+                                    <p>A busca reversa permite encontrar a origem de uma imagem e verificar a sua licença:</p>
+                                    <ol>
+                                        <li>Vá ao Google Images e clique no ícone da câmara</li>
+                                        <li>Faça upload da imagem ou cole o URL</li>
+                                        <li>Analise os resultados para encontrar a fonte original</li>
+                                        <li>Alternativas: TinEye, Bing Visual Search, Yandex Images</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secção: Como Usar Corretamente -->
+            <section id="usar" class="tab-content">
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Boas práticas para uso de imagens</h2>
+                        <div id="praticas-container">
+                            <!-- As práticas serão inseridas dinamicamente pelo JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Como fazer a atribuição correta</h2>
+                        <p>A atribuição correta é essencial quando se utilizam imagens que requerem crédito ao autor. Aqui está o formato recomendado:</p>
+                        
+                        <div class="example-box">
+                            <h4>Formato de atribuição:</h4>
+                            <p class="attribution-example">"[Título da Obra]" por [Nome do Autor], licenciado sob [Tipo de Licença]</p>
+                            
+                            <h4 class="mt-8">Exemplos:</h4>
+                            <div class="attribution-examples">
+                                <div class="attribution-example-item">
+                                    <div class="fake-image"></div>
+                                    <p>"Praia ao Pôr do Sol" por Maria Silva, licenciado sob CC BY 4.0</p>
+                                </div>
+                                <div class="attribution-example-item">
+                                    <div class="fake-image"></div>
+                                    <p>Foto por João Santos (Unsplash)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Exemplos de uso correto e incorreto</h2>
+                        <div class="examples-container">
+                            <div class="example correct">
+                                <h4>✅ Correto</h4>
+                                <ul>
+                                    <li>Usar imagem do Pixabay num cartaz de evento escolar sem atribuição (as licenças Pixabay não exigem atribuição)</li>
+                                    <li>Utilizar uma imagem com licença CC BY para ilustrar uma apresentação, incluindo atribuição ao autor</li>
+                                    <li>Modificar uma imagem com licença CC BY-SA para uso educacional, creditando o autor e aplicando a mesma licença ao trabalho resultante</li>
+                                    <li>Incluir uma pequena imagem de um livro ao citá-lo numa apresentação educacional, mencionando a fonte</li>
+                                </ul>
+                            </div>
+                            <div class="example incorrect">
+                                <h4>❌ Incorreto</h4>
+                                <ul>
+                                    <li>Usar uma imagem com licença CC BY-NC numa brochura para um evento pago</li>
+                                    <li>Modificar uma imagem com licença CC BY-ND, mesmo para fins educacionais</li>
+                                    <li>Usar uma imagem do Getty Images encontrada no Google sem licença ou permissão</li>
+                                    <li>Criar uma coletânea de imagens protegidas por direitos autorais para distribuir aos alunos sem permissão</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__body">
+                        <h2 class="mb-8">Casos específicos para uso educacional</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <button class="accordion-header">Imagens em apresentações para sala de aula</button>
+                                <div class="accordion-content">
+                                    <p>Em geral, é permitido usar imagens em apresentações para sala de aula se:</p>
+                                    <ul>
+                                        <li>A apresentação é apenas para fins educacionais</li>
+                                        <li>As imagens são relevantes para o tema</li>
+                                        <li>São incluídas as devidas atribuições</li>
+                                        <li>A apresentação não é disponibilizada publicamente ou comercialmente</li>
+                                    </ul>
+                                    <p>Mesmo assim, é sempre preferível usar imagens com licenças apropriadas.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">Materiais didáticos partilhados online</button>
+                                <div class="accordion-content">
+                                    <p>Para materiais que serão partilhados online (ex: plataformas de e-learning, Google Classroom):</p>
+                                    <ul>
+                                        <li>Use apenas imagens com licenças que permitam redistribuição</li>
+                                        <li>Evite imagens com licenças que proíbam uso comercial se o material for usado numa instituição privada</li>
+                                        <li>Inclua sempre as atribuições corretas</li>
+                                        <li>Se necessário, restrinja o acesso aos materiais apenas aos alunos inscritos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">Trabalhos dos alunos</button>
+                                <div class="accordion-content">
+                                    <p>Oriente os alunos a:</p>
+                                    <ul>
+                                        <li>Usar bancos de imagens gratuitas como os listados nesta aplicação</li>
+                                        <li>Citar corretamente todas as fontes de imagens usadas</li>
+                                        <li>Entender que os mesmos princípios de direitos autorais se aplicam aos seus trabalhos</li>
+                                        <li>Considerar a criação das suas próprias imagens quando possível</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secção: Quiz Interativo -->
+            <section id="quiz" class="tab-content">
+                <div class="card mb-8">
+                    <div class="card__body">
+                        <h2 class="mb-8">Teste os seus conhecimentos</h2>
+                        <p>Responda às seguintes perguntas para verificar o seu conhecimento sobre direitos de imagem na web. Selecione a opção que considera correta para cada pergunta.</p>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="quiz-progress"></div>
+                            </div>
+                            <div class="progress-text" id="quiz-progress-text">Pergunta 1 de 7</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="quiz-container">
+                    <!-- O quiz será inserido dinamicamente pelo JavaScript -->
+                </div>
+
+                <div id="quiz-results" class="card" style="display: none;">
+                    <div class="card__body">
+                        <h2 class="mb-8">Resultados</h2>
+                        <div id="results-content">
+                            <!-- Os resultados do quiz serão inseridos aqui pelo JavaScript -->
+                        </div>
+                        <button id="restart-quiz" class="btn btn--primary mt-8">Tentar Novamente</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="py-16">
+            <p>© 2025 Direitos de Imagem na Web | Guia Educativo para Professores e Alunos</p>
+            <p>Desenvolvido como recurso educacional para uso em contexto escolar.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
