@@ -57,49 +57,56 @@ const dadosApp = {
             url: "#",
             descricao: "Imagens de alta qualidade totalmente gratuitas, livres de direitos autorais.",
             licenca: "Licença Pixabay (similar a CC0)",
-            icone: "🖼️"
+            icone: "🖼️",
+            imagem: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&h=250&fit=crop"
         },
         {
             nome: "Unsplash",
             url: "#",
             descricao: "Fotografias de alta resolução gratuitas. Todas as imagens são livres de direitos autorais.",
             licenca: "Licença Unsplash (similar a CC0)",
-            icone: "📷"
+            icone: "📷",
+            imagem: "https://images.unsplash.com/photo-1452457807411-4979b707c5be?w=400&h=250&fit=crop"
         },
         {
             nome: "Pexels",
             url: "#",
             descricao: "Fotos e vídeos gratuitos de alta qualidade partilhados por criadores talentosos.",
             licenca: "Licença Pexels (similar a CC0)",
-            icone: "📸"
+            icone: "📸",
+            imagem: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop"
         },
         {
             nome: "Reshot",
             url: "#",
             descricao: "Imagens de alta qualidade, gratuitas e livres de direitos autorais.",
             licenca: "Licença gratuita sem atribuição",
-            icone: "🎞️"
+            icone: "🎞️",
+            imagem: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=250&fit=crop"
         },
         {
             nome: "Google Imagens",
             url: "#",
             descricao: "Use os filtros de direitos de utilização para encontrar imagens que pode usar legalmente.",
             licenca: "Varia conforme a imagem",
-            icone: "🔍"
+            icone: "🔍",
+            imagem: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop"
         },
         {
             nome: "Wikimedia Commons",
             url: "#",
             descricao: "Repositório de mídia livre que qualquer pessoa pode usar ou contribuir.",
             licenca: "Varia (geralmente CC)",
-            icone: "📚"
+            icone: "📚",
+            imagem: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=250&fit=crop"
         },
         {
             nome: "Creative Commons Search",
             url: "#",
             descricao: "Ferramenta para procurar em diversas fontes por conteúdo licenciado sob Creative Commons.",
             licenca: "Varia (sempre Creative Commons)",
-            icone: "🔎"
+            icone: "🔎",
+            imagem: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop"
         }
     ],
     praticas: [
@@ -290,6 +297,7 @@ function renderBancosImagens() {
                 <div class="bank-card__title">${banco.nome}</div>
             </div>
             <div class="bank-card__body">
+                ${banco.imagem ? `<img src="${banco.imagem}" alt="Logo do ${banco.nome}" class="bank-card__image">` : ''}
                 <p class="bank-card__description">${banco.descricao}</p>
                 <p class="bank-card__license">${banco.licenca}</p>
                 <button class="btn btn--primary bank-card__button">Visitar ${banco.nome}</button>
