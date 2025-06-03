@@ -1086,9 +1086,11 @@ header {
 
 .fake-image {
     height: 120px;
-    background-color: var(--color-secondary);
+    width: 192px; /* Calculated for 16:10 aspect ratio */
+    object-fit: cover;
     border-radius: var(--radius-sm);
     margin-bottom: var(--space-8);
+    display: block;
 }
 
 .examples-container {
